@@ -2,6 +2,7 @@ Feature: Cadastrar novo filme
   Background:
     * url baseUrl
     * def pathUrl = 'movies'
+
   Scenario: criar e recuperar novo filme
     Given request {description: 'De volta para o Futuro'}
     And path pathUrl
