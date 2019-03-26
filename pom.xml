@@ -37,6 +37,7 @@
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        <gatling.plugin.version>2.2.4</gatling.plugin.version>
     </properties>
 
     <build>
@@ -52,6 +53,17 @@
                     <systemProperties>
                         <karate.options>--tags ~@ignore</karate.options>
                     </systemProperties>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>io.gatling</groupId>
+                <artifactId>gatling-maven-plugin</artifactId>
+                <version>${gatling.plugin.version}</version>
+                <configuration>
+                    <simulationsFolder>src/test/java</simulationsFolder>
+                    <includes>
+                        <include>movie.MovieSimulation</include>
+                    </includes>
                 </configuration>
             </plugin>
         </plugins>

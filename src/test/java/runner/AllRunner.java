@@ -10,8 +10,8 @@ import org.junit.runner.RunWith;
         "src/test/java/movie/"})
 public class AllRunner {
 
-    /*@BeforeClass
+    @BeforeClass
     public static void before() {
         System.setProperty("karate.env", "dev");
-    }*/
+    }
 }
