@@ -13,7 +13,7 @@ class MovieSimulation extends Simulation {
 
   /*protocol.nameResolver = (req, ctx) => req.getHeader("karate-name")*/
 
-  val create = scenario("criar e recuperar novo filme").exec(karateFeature("classpath:movie/movie.feature"))
+  val create = scenario("criar e recuperar novo filme").exec(karateFeature("src/test/java/movie/movie.feature"))
 
   setUp(
     create.inject(rampUsers(10) over (5 seconds)).protocols(protocol)

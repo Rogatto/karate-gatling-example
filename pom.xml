@@ -8,7 +8,6 @@
     <artifactId>fastmovies</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-
     <dependencies>
         <dependency>
             <groupId>com.intuit.karate</groupId>
