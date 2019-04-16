@@ -6,3 +6,7 @@ Efetuar clone para seu local e utilizar comandos do maven para executar o projet
 
 mvn clean test -Dtest="AllRunner"  
 mvn clean test-compile gatling:test
+
+# Executar Projeto com as duas features sendo testadas paralelamente:
+mvn clean test -Dtest="ParallelRunner" 
+
