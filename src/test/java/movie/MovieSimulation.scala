@@ -7,8 +7,7 @@ import scala.concurrent.duration._
 class MovieSimulation extends Simulation {
 
   val protocol = karateProtocol(
-    "/movies" -> Nil/*,
-    "/cats" -> pauseFor("get" -> 15, "post" -> 25)*/
+    "/movies" -> Nil
   )
 
   /*protocol.nameResolver = (req, ctx) => req.getHeader("karate-name")*/
