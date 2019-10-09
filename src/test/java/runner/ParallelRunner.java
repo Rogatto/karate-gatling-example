@@ -4,10 +4,11 @@ import com.intuit.karate.KarateOptions;
 import com.intuit.karate.Results;
 import com.intuit.karate.Runner;
 import static org.junit.Assert.*;
+
+import org.junit.BeforeClass;
 import org.junit.Test;
 
-@KarateOptions(tags = {"~@ignore"},features = {
-        "src/test/java/movie/"})
+@KarateOptions(tags = {"~@ignore"},features = {"src/test/java/movie/parallel/"})
 public class ParallelRunner {
 
     @Test

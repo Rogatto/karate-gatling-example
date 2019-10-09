@@ -6,9 +6,8 @@ import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
 
 @RunWith(Karate.class)
-@KarateOptions(features = {
-        "src/test/java/movie/"})
-public class AllRunner {
+@KarateOptions(features = "src/test/java/movie/simple/")
+public class MovieRunner {
 
     @BeforeClass
     public static void before() {

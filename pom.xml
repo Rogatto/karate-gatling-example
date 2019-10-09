@@ -8,12 +8,13 @@
     <artifactId>fastmovies</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
         <maven.compiler.version>3.6.0</maven.compiler.version>
-        <karate.version>0.9.0.RC5</karate.version>
-        <gatling.plugin.version>2.2.4</gatling.plugin.version>
+        <karate.version>0.9.4</karate.version>
+        <gatling.plugin.version>3.0.2</gatling.plugin.version>
     </properties>
 
     <dependencies>
@@ -21,13 +22,6 @@
             <groupId>com.intuit.karate</groupId>
             <artifactId>karate-apache</artifactId>
             <version>${karate.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.intuit.karate</groupId>
-            <artifactId>karate-junit4</artifactId>
-            <version>${karate.version}</version>
-            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>com.intuit.karate</groupId>
@@ -35,18 +29,10 @@
             <version>${karate.version}</version>
             <scope>test</scope>
         </dependency>
-
-        <!-- Dependências para relatório externo -->
         <dependency>
-            <groupId>net.masterthought</groupId>
-            <artifactId>cucumber-reporting</artifactId>
-            <version>3.17.1</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>commons-io</groupId>
-            <artifactId>commons-io</artifactId>
-            <version>2.6</version>
+            <groupId>com.intuit.karate</groupId>
+            <artifactId>karate-junit4</artifactId>
+            <version>${karate.version}</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -79,7 +65,7 @@
                 <configuration>
                     <simulationsFolder>src/test/java</simulationsFolder>
                     <includes>
-                        <include>movie.MovieSimulation</include>
+                        <include>perfomance.MovieSimulation</include>
                     </includes>
                 </configuration>
             </plugin>
